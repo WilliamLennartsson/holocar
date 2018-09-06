@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <UnityWSASolutionName>holo-car-v3</UnityWSASolutionName>
+        <UnityWSASolutionDir>C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\</UnityWSASolutionDir>
+        <UnityProjectDir>C:\Users\willi\Documents\developer\hololens\holo-car-v3\</UnityProjectDir>
+        <UnityWSAPlayerDir>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
+        <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
+    </PropertyGroup>
+</Project>
