@@ -31,7 +31,16 @@ public class ChangeColor : MonoBehaviour, ISpeechHandler {
             case "color gray":
                 color = Color.gray;
                 break;
-        }
+            case "show parts":
+                color = Color.white;
+                break;
+            case "reset parts":
+                color = Color.yellow;
+                break;
+            default:
+                break;
+        }   
+
 
         foreach(var component in carObjs)
         {

@@ -35,9 +35,9 @@ namespace Academy
             if (isNavigationEnabled)
             {
                 float rotationFactor = eventData.NormalizedOffset.x * RotationSensitivity;
-                if (rotationFactor > 3)
+                if (rotationFactor > 2)
                 {
-                    rotationFactor = 13;
+                    rotationFactor = 2;
                 }
                 transform.Rotate(new Vector3(0, -1 * rotationFactor, 0));
                 /* TODO: DEVELOPER CODING EXERCISE 2.c */
