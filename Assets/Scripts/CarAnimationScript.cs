@@ -37,6 +37,11 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
         //notAnimatedCar.SetActive(false);
         anim.Play("CarAnimation");
     }
+
+    public void triggerDetailAnimation()
+    {
+        anim.Play("DetailAnimation");
+    }
     // Use this for initialization
     void Start () {
 
