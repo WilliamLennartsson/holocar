@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Door
   - Lacken
+  - Potatis
+  - AnimatedCar
   layers:
   - Default
   - TransparentFX

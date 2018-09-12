@@ -8,7 +8,7 @@
 holo-car-v3.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 1D02BC64BAC0D041019673A1C4C51737
 holo-car-v3\App.cs: D5E0E31EBF4A2AEA0ED916F416E34125
-holo-car-v3\holo-car-v3.csproj: 16C0F41BD7F9E1459D375EA1913FEEA9
+holo-car-v3\holo-car-v3.csproj: 51A0E27BE79822F03DDDBB801B73EFEF
 holo-car-v3\holo-car-v3.csproj.user: modified
 holo-car-v3\Package.appxmanifest: D18B2DC7D801696D74324C8D90FE35D1
 holo-car-v3\project.json: 1D02BC64BAC0D041019673A1C4C51737

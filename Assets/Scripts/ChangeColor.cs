@@ -31,14 +31,14 @@ public class ChangeColor : MonoBehaviour, ISpeechHandler {
             case "color gray":
                 color = Color.gray;
                 break;
-            case "show parts":
+            case "color white":
                 color = Color.white;
                 break;
-            case "reset parts":
+            case "color yellow":
                 color = Color.yellow;
                 break;
             default:
-                break;
+                return;
         }   
 
 

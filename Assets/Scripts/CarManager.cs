@@ -33,14 +33,18 @@ namespace Academy
             // Reset local variables.
             isModelExpanding = false;
 
+
             GameObject currentModel = ExpandModel.Instance.gameObject;
             GameObject expandedModel = ExpandModel.Instance.ExpandedModel;
 
+            Animator anim = currentModel.GetComponent<Animator>();
+            anim.Play("ResetCarAnimation");
             // Disable the expanded model.
             expandedModel.SetActive(false);
 
             // Enable the idle model.
             currentModel.SetActive(true);
+
 
             // Enable the animators for the next time the model is expanded.
             Animator[] expandedAnimators = expandedModel.GetComponentsInChildren<Animator>();
@@ -51,7 +55,7 @@ namespace Academy
 
             ExpandModel.Instance.Reset();
         }
-
+        Animator anim;
         public void ExpandModelCommand()
         {
             // Swap out the current model for the expanded model.
@@ -64,6 +68,9 @@ namespace Academy
 
             currentModel.SetActive(false);
             expandedModel.SetActive(true);
+
+            anim = expandedModel.GetComponent<Animator>();
+            anim.Play("CarAnimation");
 
             // Play animation.  Ensure the Loop Time check box is disabled in the inspector for this animation to play it once.
             Animator[] expandedAnimators = expandedModel.GetComponentsInChildren<Animator>();
