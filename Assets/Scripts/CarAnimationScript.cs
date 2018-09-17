@@ -9,6 +9,8 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
     private GameObject animatedCar;
     private GameObject notAnimatedCar;
     private bool isAnimating;
+    private bool spinning = true;
+    public float speed = 5f;
     public void OnSpeechKeywordRecognized(SpeechEventData eventData)
     {
         if (eventData.RecognizedText == "show parts")
@@ -19,18 +21,25 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
         {
 
         }
-        
-        
     }
+
     public void resetAnimation()
     {
+        spinning = false;
         anim.Play("ResetCarAnimation");    
     }
+
     public void swapCars()
     {
         //animatedCar.SetActive(false);
         //notAnimatedCar.SetActive(true);
     }
+
+    public void setSpinningTrue()
+    {
+        spinning = true;
+    }
+
     public void triggerAnimation()
     {
         //animatedCar.SetActive(true);
@@ -43,6 +52,7 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
         anim.Play("DetailAnimation");
     }
     // Use this for initialization
+    public GameObject[] spinningParts;
     void Start () {
 
         animatedCar = GameObject.FindGameObjectWithTag("AnimatedCar");
@@ -51,10 +61,20 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
         anim = animatedCar.GetComponent<Animator>();
         isAnimating = false;
 
+        spinningParts = GameObject.FindGameObjectsWithTag("SpinningTag");
+
     }
     void update()
     {
-
+        if (spinning)
+        {
+            foreach (GameObject part in spinningParts)
+            {
+                part.transform.Rotate(Vector3.up, speed * Time.deltaTime);
+                
+            }
+       
+        }
     }
 
 }
