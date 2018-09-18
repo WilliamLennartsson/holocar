@@ -35,8 +35,16 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
         //notAnimatedCar.SetActive(true);
     }
 
+    private GazeRotater[] gazeRotaters;
     public void setSpinningTrue()
     {
+        gazeRotaters = GetComponentsInChildren<GazeRotater>();
+
+        for (int i = 0; i < gazeRotaters.Length; i++)
+        {
+            gazeRotaters[i].enabled = true;
+        }
+
         spinning = true;
     }
 
@@ -62,6 +70,9 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
         isAnimating = false;
 
         spinningParts = GameObject.FindGameObjectsWithTag("SpinningTag");
+
+        anim.Play("DetailAnimation");
+
 
     }
     void update()

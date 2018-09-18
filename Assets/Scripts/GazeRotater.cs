@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GazeRotater : GazeBehaviorBase {
 
-
+    Transform[] transformToRotate;
     public float maxRotationSpeed = 40f;
 	// Use this for initialization
 	void Start () {
@@ -13,7 +13,12 @@ public class GazeRotater : GazeBehaviorBase {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(Vector3.up, maxRotationSpeed * transitionFactor * Time.deltaTime);
 
+        transformToRotate = GetComponentsInChildren<Transform>();
+        for (int i = 0; i < transformToRotate.Length; i++)
+        {
+            transformToRotate[i].Rotate(Vector3.up, maxRotationSpeed * transitionFactor * Time.deltaTime);
+        }
+        //transform.Rotate(Vector3.up, maxRotationSpeed * transitionFactor * Time.deltaTime);
 	}
 }
