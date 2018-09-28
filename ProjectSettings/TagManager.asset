@@ -9,6 +9,7 @@ TagManager:
   - Potatis
   - AnimatedCar
   - SpinningTag
+  - InfoComponent
   layers:
   - Default
   - TransparentFX
