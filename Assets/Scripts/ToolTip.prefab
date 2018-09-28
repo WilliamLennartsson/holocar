@@ -113,7 +113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4265888144028786
 Transform:
   m_ObjectHideFlags: 1
@@ -291,7 +291,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1670758749238574}
-  m_Text: I am a Tool Tip
+  m_Text: Tool Tip goes here
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -569,7 +569,7 @@ MonoBehaviour:
   pivot: {fileID: 1692073572347358}
   label: {fileID: 1670758749238574}
   contentParent: {fileID: 1669469392401874}
-  toolTipText: 
+  toolTipText: Tool Tip goes here
   backgroundPadding: {x: 0, y: 0}
   backgroundOffset: {x: 0, y: 0, z: 0}
   contentScale: 0.2
