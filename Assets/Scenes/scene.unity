@@ -3903,6 +3903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 607236271}
   - component: {fileID: 607236272}
+  - component: {fileID: 607236273}
   m_Layer: 0
   m_Name: KLP
   m_TagString: Untagged
@@ -3942,8 +3943,21 @@ MonoBehaviour:
     transitionInDuration: 1
     transitionOutDuration: 1
   infoComponent: {fileID: 0}
-  toolTipText: Tool Tip goes here
+  toolTipText: 
   maxRotationSpeed: 40
+--- !u!114 &607236273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 607236270}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b405174ea32dc41ab0f1ed873c9def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoComponent: {fileID: 1925456893}
+  toolTipText: Left front tire
 --- !u!1 &617629030
 GameObject:
   m_ObjectHideFlags: 0
@@ -4312,8 +4326,49 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114568860847939262, guid: 88628902c9b827d489ac462070f0e256, type: 2}
+    - {fileID: 114230849318219792, guid: 88628902c9b827d489ac462070f0e256, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 88628902c9b827d489ac462070f0e256, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &684523000 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1849808137831748, guid: 88628902c9b827d489ac462070f0e256,
+    type: 2}
+  m_PrefabInternal: {fileID: 684522999}
+--- !u!114 &684523001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 684523000}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd5d9f6c21bddf4c8babdd9ca081711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionOption:
+    transitionInDuration: 1
+    transitionOutDuration: 1
+  infoComponent: {fileID: 0}
+  toolTipText: Tool Tip goes here
+  maxRotationSpeed: 40
+--- !u!114 &684523002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 684523000}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b405174ea32dc41ab0f1ed873c9def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoComponent: {fileID: 1925456893}
+  toolTipText: Right front door
+--- !u!1 &708781803 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1159203306281736, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1012239295}
 --- !u!1 &728785874
 GameObject:
   m_ObjectHideFlags: 0
@@ -4411,6 +4466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 756346216}
   - component: {fileID: 756346217}
+  - component: {fileID: 756346218}
   m_Layer: 0
   m_Name: KPZ
   m_TagString: Untagged
@@ -4450,8 +4506,21 @@ MonoBehaviour:
     transitionInDuration: 1
     transitionOutDuration: 1
   infoComponent: {fileID: 0}
-  toolTipText: Tool Tip goes here
+  toolTipText: 
   maxRotationSpeed: 40
+--- !u!114 &756346218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 756346215}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b405174ea32dc41ab0f1ed873c9def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoComponent: {fileID: 1925456893}
+  toolTipText: Right back tire
 --- !u!1 &774497583
 GameObject:
   m_ObjectHideFlags: 0
@@ -4863,7 +4932,6 @@ GameObject:
   - component: {fileID: 803630737}
   - component: {fileID: 803630736}
   - component: {fileID: 803630744}
-  - component: {fileID: 803630742}
   - component: {fileID: 803630746}
   m_Layer: 0
   m_Name: Xc91_Animated
@@ -5154,23 +5222,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetFeedbackSound: {fileID: 0}
   interactibleAction: {fileID: 0}
---- !u!114 &803630742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 803630735}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efd5d9f6c21bddf4c8babdd9ca081711, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transitionOption:
-    transitionInDuration: 1
-    transitionOutDuration: 1
-  infoComponent: {fileID: 0}
-  toolTipText: Tool Tip goes here
-  maxRotationSpeed: 40
 --- !u!4 &803630743
 Transform:
   m_ObjectHideFlags: 0
@@ -5249,7 +5300,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 803630735}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6eb034688bcf84b4bb52b3a3310868c3, type: 3}
   m_Name: 
@@ -6550,6 +6601,128 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 995783175}
   m_Mesh: {fileID: 4300014, guid: 9e92347dce8b1854fbb52d9837530d0f, type: 3}
+--- !u!1001 &1012239295
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.823
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.02888076
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.946
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.0019712504
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999981
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114065498733854586, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: Start.x
+      value: -0.02884487
+      objectReference: {fileID: 0}
+    - target: {fileID: 114065498733854586, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: Start.z
+      value: 0.0020264988
+      objectReference: {fileID: 0}
+    - target: {fileID: 114065498733854586, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: End.x
+      value: -0.0005000013
+      objectReference: {fileID: 0}
+    - target: {fileID: 114065498733854586, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: End.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114065498733854586, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: End.z
+      value: -0.000000007506355
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697570813435190, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: masterTipState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697570813435190, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: anchor
+      value: 
+      objectReference: {fileID: 708781803}
+    - target: {fileID: 114065498733854586, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114065498733854586, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: Start.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114608972520619298, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: LineMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114608972520619298, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: lineRenderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 15.41909
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.22600001
+      objectReference: {fileID: 0}
+    - target: {fileID: 114560166902750794, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992329056269614, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.028844869
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992329056269614, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992329056269614, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.0020264988
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1054723074
 GameObject:
   m_ObjectHideFlags: 0
@@ -6915,6 +7088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1094789058}
   - component: {fileID: 1094789059}
+  - component: {fileID: 1094789060}
   m_Layer: 0
   m_Name: KPP
   m_TagString: Untagged
@@ -6954,8 +7128,21 @@ MonoBehaviour:
     transitionInDuration: 1
     transitionOutDuration: 1
   infoComponent: {fileID: 0}
-  toolTipText: Tool Tip goes here
+  toolTipText: 
   maxRotationSpeed: 40
+--- !u!114 &1094789060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1094789057}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b405174ea32dc41ab0f1ed873c9def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoComponent: {fileID: 1925456893}
+  toolTipText: Right front tire
 --- !u!1 &1113269659
 GameObject:
   m_ObjectHideFlags: 0
@@ -8649,6 +8836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1435579710}
   - component: {fileID: 1435579711}
+  - component: {fileID: 1435579712}
   m_Layer: 0
   m_Name: DPZ
   m_TagString: Untagged
@@ -8692,6 +8880,19 @@ MonoBehaviour:
   infoComponent: {fileID: 0}
   toolTipText: Tool Tip goes here
   maxRotationSpeed: 40
+--- !u!114 &1435579712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1435579709}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b405174ea32dc41ab0f1ed873c9def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoComponent: {fileID: 1925456893}
+  toolTipText: Left back door
 --- !u!1 &1497688106
 GameObject:
   m_ObjectHideFlags: 0
@@ -8701,6 +8902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1497688107}
   - component: {fileID: 1497688108}
+  - component: {fileID: 1497688109}
   m_Layer: 0
   m_Name: KLZ
   m_TagString: Untagged
@@ -8742,6 +8944,19 @@ MonoBehaviour:
   infoComponent: {fileID: 0}
   toolTipText: Tool Tip goes here
   maxRotationSpeed: 40
+--- !u!114 &1497688109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1497688106}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b405174ea32dc41ab0f1ed873c9def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoComponent: {fileID: 1925456893}
+  toolTipText: Left back tire
 --- !u!1001 &1522386104
 Prefab:
   m_ObjectHideFlags: 0
@@ -8797,6 +9012,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1527374375}
   - component: {fileID: 1527374376}
+  - component: {fileID: 1527374377}
   m_Layer: 0
   m_Name: DLZ
   m_TagString: Untagged
@@ -8841,6 +9057,19 @@ MonoBehaviour:
   infoComponent: {fileID: 0}
   toolTipText: Tool Tip goes here
   maxRotationSpeed: 40
+--- !u!114 &1527374377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1527374374}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b405174ea32dc41ab0f1ed873c9def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoComponent: {fileID: 1925456893}
+  toolTipText: Left back door
 --- !u!1 &1552726657
 GameObject:
   m_ObjectHideFlags: 0
@@ -10965,6 +11194,11 @@ Transform:
   m_Father: {fileID: 190032790}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1925456893 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1963181076315932, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1012239295}
 --- !u!1 &1968150529
 GameObject:
   m_ObjectHideFlags: 0
@@ -11264,6 +11498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2060064002}
   - component: {fileID: 2060064003}
+  - component: {fileID: 2060064004}
   m_Layer: 0
   m_Name: DLP
   m_TagString: Untagged
@@ -11306,10 +11541,22 @@ MonoBehaviour:
   transitionOption:
     transitionInDuration: 1
     transitionOutDuration: 1
-  infoComponent: {fileID: 1963181076315932, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
-    type: 2}
+  infoComponent: {fileID: 0}
   toolTipText: Tool Tip goes here
   maxRotationSpeed: 40
+--- !u!114 &2060064004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060064001}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b405174ea32dc41ab0f1ed873c9def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoComponent: {fileID: 1925456893}
+  toolTipText: Left front door
 --- !u!1 &2072673534
 GameObject:
   m_ObjectHideFlags: 0

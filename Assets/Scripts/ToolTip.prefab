@@ -113,7 +113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4265888144028786
 Transform:
   m_ObjectHideFlags: 1
@@ -175,7 +175,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963181076315932}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0.9452837, z: -0, w: 0.32624948}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 15.419085, y: 15.419087, z: 15.419087}
   m_Children:
@@ -561,10 +561,10 @@ MonoBehaviour:
   requireGaze: 1
   showBackground: 1
   showOutline: 0
-  showConnector: 1
-  tipState: 1
-  groupTipState: 0
-  masterTipState: 0
+  showConnector: 0
+  tipState: 2
+  groupTipState: 2
+  masterTipState: 1
   anchor: {fileID: 0}
   pivot: {fileID: 1692073572347358}
   label: {fileID: 1670758749238574}

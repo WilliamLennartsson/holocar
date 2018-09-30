@@ -6,7 +6,6 @@ using UnityEngine;
 public abstract class GazeBehaviorBase : TransitionBehaviorBase, IFocusable {
     
 
-
     public void OnFocusEnter()
     {
         transitionIn();

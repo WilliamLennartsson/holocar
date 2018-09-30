@@ -9,6 +9,7 @@ public class GazeRotater : GazeBehaviorBase
     Transform[] transformToRotate;
     public GameObject infoComponent;
     public string toolTipText = "Tool Tip goes here";
+    bool isToolTip = true;
 
     public float maxRotationSpeed = 40f;
     // Use this for initialization
@@ -19,20 +20,28 @@ public class GazeRotater : GazeBehaviorBase
         tool.Anchor = gameObject;
         tool.ToolTipText = toolTipText;
         Instantiate(infoComponent, pos, Quaternion.identity);
-        infoComponent.SetActive(false);
         
-    }   
+        
+        
+    }
 
+    
     // Update is called once per frame
     void Update()
     {
 
         transformToRotate = GetComponentsInChildren<Transform>();
+        infoComponent.transform.Rotate(Vector3.up, maxRotationSpeed * transitionFactor * Time.deltaTime);
 
         for (int i = 0; i < transformToRotate.Length; i++)
         {
             transformToRotate[i].Rotate(Vector3.up, maxRotationSpeed * transitionFactor * Time.deltaTime);
+
         }
+        
+
+        
+
     }
 }
 

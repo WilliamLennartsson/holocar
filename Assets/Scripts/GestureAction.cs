@@ -35,11 +35,8 @@ namespace Academy
             if (isNavigationEnabled)
             {
                 float rotationFactor = eventData.NormalizedOffset.x * RotationSensitivity;
-                if (rotationFactor > 2)
-                {
-                    rotationFactor = 2;
-                }
-                transform.Rotate(new Vector3(0, -1 * rotationFactor, 0));
+                
+                //transform.Rotate(new Vector3(0, -1 * rotationFactor, 0));
                 /* TODO: DEVELOPER CODING EXERCISE 2.c */
 
                 // 2.c: Calculate a float rotationFactor based on eventData's NormalizedOffset.x multiplied by RotationSensitivity.
