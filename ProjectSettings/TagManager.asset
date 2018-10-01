@@ -10,6 +10,7 @@ TagManager:
   - AnimatedCar
   - SpinningTag
   - InfoComponent
+  - ToolTip
   layers:
   - Default
   - TransparentFX

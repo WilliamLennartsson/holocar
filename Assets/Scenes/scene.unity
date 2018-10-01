@@ -157,8 +157,7 @@ MonoBehaviour:
   transitionOption:
     transitionInDuration: 1
     transitionOutDuration: 1
-  infoComponent: {fileID: 0}
-  toolTipText: Tool Tip goes here
+  focus: 0
   maxRotationSpeed: 40
 --- !u!1 &38269033
 GameObject:
@@ -628,7 +627,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012139293616, guid: e479168dfdfb19248a685bc98134692a, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e479168dfdfb19248a685bc98134692a, type: 2}
@@ -2691,8 +2690,7 @@ MonoBehaviour:
   transitionOption:
     transitionInDuration: 1
     transitionOutDuration: 1
-  infoComponent: {fileID: 0}
-  toolTipText: Tool Tip goes here
+  focus: 0
   maxRotationSpeed: 40
 --- !u!1 &418370246
 GameObject:
@@ -3463,8 +3461,7 @@ MonoBehaviour:
   transitionOption:
     transitionInDuration: 1
     transitionOutDuration: 1
-  infoComponent: {fileID: 0}
-  toolTipText: Tool Tip goes here
+  focus: 0
   maxRotationSpeed: 40
 --- !u!1 &576790242
 GameObject:
@@ -3942,8 +3939,7 @@ MonoBehaviour:
   transitionOption:
     transitionInDuration: 1
     transitionOutDuration: 1
-  infoComponent: {fileID: 0}
-  toolTipText: 
+  focus: 0
   maxRotationSpeed: 40
 --- !u!114 &607236273
 MonoBehaviour:
@@ -4348,8 +4344,7 @@ MonoBehaviour:
   transitionOption:
     transitionInDuration: 1
     transitionOutDuration: 1
-  infoComponent: {fileID: 0}
-  toolTipText: Tool Tip goes here
+  focus: 0
   maxRotationSpeed: 40
 --- !u!114 &684523002
 MonoBehaviour:
@@ -4505,8 +4500,7 @@ MonoBehaviour:
   transitionOption:
     transitionInDuration: 1
     transitionOutDuration: 1
-  infoComponent: {fileID: 0}
-  toolTipText: 
+  focus: 0
   maxRotationSpeed: 40
 --- !u!114 &756346218
 MonoBehaviour:
@@ -5300,7 +5294,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 803630735}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6eb034688bcf84b4bb52b3a3310868c3, type: 3}
   m_Name: 
@@ -5309,7 +5303,7 @@ MonoBehaviour:
   boundingBoxPrefab: {fileID: 0}
   ManipulationMode: 0
   ConstraintOnRotation: 0
-  OneHandMovement: 1
+  OneHandMovement: 0
 --- !u!1 &835617018
 GameObject:
   m_ObjectHideFlags: 0
@@ -6610,11 +6604,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.823
+      value: 0.8230001
       objectReference: {fileID: 0}
     - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.02888076
+      value: 0.028880775
       objectReference: {fileID: 0}
     - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6622,7 +6616,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 2.2547825e-31
       objectReference: {fileID: 0}
     - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
       propertyPath: m_LocalRotation.y
@@ -6630,7 +6624,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 4.844818e-31
       objectReference: {fileID: 0}
     - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
       propertyPath: m_LocalRotation.w
@@ -6643,27 +6637,27 @@ Prefab:
     - target: {fileID: 114065498733854586, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
         type: 2}
       propertyPath: Start.x
-      value: -0.02884487
+      value: -0.028844869
       objectReference: {fileID: 0}
     - target: {fileID: 114065498733854586, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
         type: 2}
       propertyPath: Start.z
-      value: 0.0020264988
+      value: 0.0020264979
       objectReference: {fileID: 0}
     - target: {fileID: 114065498733854586, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
         type: 2}
       propertyPath: End.x
-      value: -0.0005000013
+      value: -0.00050000113
       objectReference: {fileID: 0}
     - target: {fileID: 114065498733854586, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
         type: 2}
       propertyPath: End.y
-      value: 0
+      value: 4.849231e-34
       objectReference: {fileID: 0}
     - target: {fileID: 114065498733854586, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
         type: 2}
       propertyPath: End.z
-      value: -0.000000007506355
+      value: -0.000000007506351
       objectReference: {fileID: 0}
     - target: {fileID: 114697570813435190, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
         type: 2}
@@ -6683,7 +6677,7 @@ Prefab:
     - target: {fileID: 114065498733854586, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
         type: 2}
       propertyPath: Start.y
-      value: 0
+      value: 2.8885205e-32
       objectReference: {fileID: 0}
     - target: {fileID: 114608972520619298, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
         type: 2}
@@ -6697,7 +6691,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
       propertyPath: m_LocalScale.z
-      value: 15.41909
+      value: 15.419096
       objectReference: {fileID: 0}
     - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6719,6 +6713,69 @@ Prefab:
     - target: {fileID: 4992329056269614, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0.0020264988
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963181076315932, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697570813435190, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697570813435190, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: toolTipText
+      value: 'Aaaaaaaaa
+
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 102388150973355850, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: m_Text
+      value: Aaaaaaaaa
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697570813435190, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: tipState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697570813435190, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: groupTipState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697570813435190, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: showConnector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963181076315932, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_TagString
+      value: ToolTip
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866436118204410, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697570813435190, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: buttonState
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 15.419089
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958700347904618, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 15.419087
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697570813435190, guid: 3b2729a90daf689408e97dcbcc8e8a4e,
+        type: 2}
+      propertyPath: showOutline
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b2729a90daf689408e97dcbcc8e8a4e, type: 2}
@@ -7127,8 +7184,7 @@ MonoBehaviour:
   transitionOption:
     transitionInDuration: 1
     transitionOutDuration: 1
-  infoComponent: {fileID: 0}
-  toolTipText: 
+  focus: 0
   maxRotationSpeed: 40
 --- !u!114 &1094789060
 MonoBehaviour:
@@ -8877,8 +8933,7 @@ MonoBehaviour:
   transitionOption:
     transitionInDuration: 1
     transitionOutDuration: 1
-  infoComponent: {fileID: 0}
-  toolTipText: Tool Tip goes here
+  focus: 0
   maxRotationSpeed: 40
 --- !u!114 &1435579712
 MonoBehaviour:
@@ -8941,8 +8996,7 @@ MonoBehaviour:
   transitionOption:
     transitionInDuration: 1
     transitionOutDuration: 1
-  infoComponent: {fileID: 0}
-  toolTipText: Tool Tip goes here
+  focus: 0
   maxRotationSpeed: 40
 --- !u!114 &1497688109
 MonoBehaviour:
@@ -9054,8 +9108,7 @@ MonoBehaviour:
   transitionOption:
     transitionInDuration: 1
     transitionOutDuration: 1
-  infoComponent: {fileID: 0}
-  toolTipText: Tool Tip goes here
+  focus: 0
   maxRotationSpeed: 40
 --- !u!114 &1527374377
 MonoBehaviour:
@@ -11541,8 +11594,7 @@ MonoBehaviour:
   transitionOption:
     transitionInDuration: 1
     transitionOutDuration: 1
-  infoComponent: {fileID: 0}
-  toolTipText: Tool Tip goes here
+  focus: 0
   maxRotationSpeed: 40
 --- !u!114 &2060064004
 MonoBehaviour:

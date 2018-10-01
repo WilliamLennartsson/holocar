@@ -15,6 +15,8 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
     public float speed = 5f;
     private bool detailAnimationRan = false;
     private bool carAnimationRan = false;
+    GameObject toolTip;
+
     public void OnSpeechKeywordRecognized(SpeechEventData eventData)
     {
         if (eventData.RecognizedText == "show parts")
@@ -30,54 +32,49 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
     public void resetAnimation()
     {
         spinning = false;
+        if (carAnimationRan || detailAnimationRan)
+        {
+            if (carAnimationRan)
+            {
+                carAnimationRan = false;
+                anim.Play("ResetCarAnimation");
+            }
+            else if (detailAnimationRan)
+            {
+                detailAnimationRan = false;
+                anim.Play("ResetDetailAnimation2");
+            }
 
-        if (carAnimationRan)
-        {
-            carAnimationRan = false;
-            anim.Play("ResetCarAnimation");
-        }
-        else if (detailAnimationRan)
-        {
-            detailAnimationRan = false;
-            // TODO: make animation for detail reset
+            toolTip.SetActive(false);
+
+            for (int i = 0; i < gazeRotaters.Length; i++)
+            {
+                gazeRotaters[i].enabled = false;
+                toolTipScripts[i].enabled = false;
+            }
         }
     }
 
     public void swapCars()
     {
-        gazeRotaters = GetComponentsInChildren<GazeRotater>();
-        toolTipScripts = GetComponentsInChildren<SpawnToolTip>();
-
-        for (int i = 0; i < gazeRotaters.Length; i++)
-        {
-            gazeRotaters[i].enabled = false;
-            toolTipScripts[i].enabled = false;
-        }
-
         spinning = false;
-        //animatedCar.SetActive(false);
-        //notAnimatedCar.SetActive(true);
     }
 
     public void setSpinningTrue()
     {
-        gazeRotaters = GetComponentsInChildren<GazeRotater>();
-        toolTipScripts = GetComponentsInChildren<SpawnToolTip>();
+
+        toolTip.SetActive(true);
 
         for (int i = 0; i < gazeRotaters.Length; i++)
         {
             gazeRotaters[i].enabled = true;
             toolTipScripts[i].enabled = true;
-
         }
-
         spinning = true;
     }
 
     public void triggerAnimation()
     {
-        //animatedCar.SetActive(true);
-        //notAnimatedCar.SetActive(false);
         carAnimationRan = true;
         anim.Play("CarAnimation");
     }
@@ -86,9 +83,8 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
     {
         detailAnimationRan = true;
         anim.Play("DetailAnimation");
-        
     }
-    // Use this for initialization
+
     public GameObject[] spinningParts;
     void Start () {
 
@@ -100,21 +96,18 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
 
         spinningParts = GameObject.FindGameObjectsWithTag("SpinningTag");
 
-        anim.Play("DetailAnimation");
+        gazeRotaters = GetComponentsInChildren<GazeRotater>();
+        toolTipScripts = GetComponentsInChildren<SpawnToolTip>();
 
+        toolTip = GameObject.FindGameObjectWithTag("ToolTip");
+        toolTip.SetActive(false);
 
+        //anim.Play("DetailAnimation");
+        
     }
     void update()
     {
-        if (spinning)
-        {
-            foreach (GameObject part in spinningParts)
-            {
-                part.transform.Rotate(Vector3.up, speed * Time.deltaTime);
-                
-            }
-       
-        }
+
     }
 
 }

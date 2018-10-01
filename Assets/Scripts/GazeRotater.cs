@@ -7,41 +7,36 @@ public class GazeRotater : GazeBehaviorBase
 {
 
     Transform[] transformToRotate;
-    public GameObject infoComponent;
-    public string toolTipText = "Tool Tip goes here";
-    bool isToolTip = true;
+    Transform initPos;
+    bool startedRotating = false;
 
     public float maxRotationSpeed = 40f;
     // Use this for initialization
     void Start()
     {
-        Vector3 pos = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.3f, gameObject.transform.position.z);
-        ToolTip tool = infoComponent.GetComponent<ToolTip>();
-        tool.Anchor = gameObject;
-        tool.ToolTipText = toolTipText;
-        Instantiate(infoComponent, pos, Quaternion.identity);
-        
-        
-        
-    }
 
+    }
     
-    // Update is called once per frame
     void Update()
     {
-
+        if (focus)
+        {
         transformToRotate = GetComponentsInChildren<Transform>();
-        infoComponent.transform.Rotate(Vector3.up, maxRotationSpeed * transitionFactor * Time.deltaTime);
 
         for (int i = 0; i < transformToRotate.Length; i++)
         {
             transformToRotate[i].Rotate(Vector3.up, maxRotationSpeed * transitionFactor * Time.deltaTime);
-
         }
-        
 
-        
-
+        } else if (!focus)
+        {
+            for (int i = 0; i < transformToRotate.Length; i++)
+            {
+                Quaternion root = transformToRotate[i].localRotation;
+                root.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
+                transformToRotate[i].localRotation = root;
+            }
+        }
     }
 }
 
