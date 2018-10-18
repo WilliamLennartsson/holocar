@@ -7,16 +7,23 @@ public class BoundingBoxGaze : MonoBehaviour, IFocusable {
 
     public GameObject boundingBoxBasic;
     protected Renderer rend;
+    protected bool isActive = false;
 
     public void OnFocusEnter()
     {
-        rend.enabled = true;
+        if (isActive)
+        {
+            rend.enabled = true;
+        }
         throw new System.NotImplementedException();
     }
 
     public void OnFocusExit()
     {
-        rend.enabled = false;
+        if (isActive)
+        {
+            rend.enabled = false;
+        }
         throw new System.NotImplementedException();
     }
 
@@ -26,6 +33,15 @@ public class BoundingBoxGaze : MonoBehaviour, IFocusable {
         rend.enabled = false;
 
 
+    }
+    public void setActive()
+    {
+        isActive = true;
+    }
+    public void setInActive()
+    {
+        isActive = false;
+        rend.enabled = false;
     }
 
     void Update () {

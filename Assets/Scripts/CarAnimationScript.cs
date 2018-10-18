@@ -8,11 +8,12 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
     private GazeRotater[] gazeRotaters;
     private SpawnToolTip[] toolTipScripts;
     private InfoTextHandler[] infoTextHandlers;
+    private BoundingBoxGaze[] boundingBoxGazers;
     public Animator anim;
     private GameObject animatedCar;
     private GameObject notAnimatedCar;
     private bool isAnimating;
-    private bool spinning = true;
+    private bool spinning = false;
     public float speed = 5f;
     private bool detailAnimationRan = false;
     private bool carAnimationRan = false;
@@ -32,18 +33,15 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
 
     public void resetAnimation()
     {
-        if (carAnimationRan || detailAnimationRan)
+        if (carAnimationRan)
         {
-            if (carAnimationRan)
-            {
-                carAnimationRan = false;
-                anim.Play("ResetCarAnimation");
-            }
-            else if (detailAnimationRan)
-            {
-                detailAnimationRan = false;
-                anim.Play("ResetDetailAnimation2");
-            }
+            carAnimationRan = false;
+            anim.Play("ResetCarAnimation");
+        }
+        else if (detailAnimationRan)
+        {
+            detailAnimationRan = false;
+            anim.Play("ResetDetailAnimation2");
         }
     }
 
@@ -53,13 +51,17 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
         spinning = false;
         for (int i = 0; i < gazeRotaters.Length; i++)
         {
+            //gazeRotaters[i].resetRotation();
             gazeRotaters[i].enabled = false;
         }
-
 
         for (int i = 0; i < infoTextHandlers.Length; i++)
         {
             infoTextHandlers[i].enabled = false;
+        }
+        for (int i = 0; i < boundingBoxGazers.Length; i++)
+        {
+            boundingBoxGazers[i].setInActive();
         }
     }
 
@@ -76,7 +78,13 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
             gazeRotaters[i].enabled = true;
         }
 
+        for (int i = 0; i < boundingBoxGazers.Length; i++)
+        {
+            boundingBoxGazers[i].setActive();
+        }
+
         spinning = true;
+        //resetAnimation();
     }
 
     public void triggerAnimation()
@@ -89,6 +97,17 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
     {
         detailAnimationRan = true;
         anim.Play("DetailAnimation");
+    }
+
+    public void editParts()
+    {
+        if (spinning)
+        {
+            for (int i = 0; i < gazeRotaters.Length; i++)
+            {
+                gazeRotaters[i].enabled = false;
+            }
+        }
     }
 
     public GameObject[] spinningParts;
@@ -105,15 +124,12 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
         gazeRotaters = GetComponentsInChildren<GazeRotater>();
         toolTipScripts = GetComponentsInChildren<SpawnToolTip>();
         infoTextHandlers = GetComponentsInChildren<InfoTextHandler>();
+        boundingBoxGazers = GetComponentsInChildren<BoundingBoxGaze>();
 
         //toolTip = GameObject.FindGameObjectWithTag("ToolTip");
         //toolTip.SetActive(false);
-        triggerAnimation();
-        //anim.Play("DetailAnimation");
-    }
-    void update()
-    {
-
+        //triggerAnimation();
+        //triggerDetailAnimation();
     }
 
 }

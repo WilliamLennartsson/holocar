@@ -35,12 +35,16 @@ public class GazeRotater : GazeBehaviorBase
 
         } else if (!focus)
         {
-            for (int i = 0; i < transformToRotate.Length; i++)
-            {
-                Quaternion root = transformToRotate[i].localRotation;
-                root.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
-                transformToRotate[i].localRotation = root;
-            }
+            resetRotation();
+        }
+    }
+    public void resetRotation()
+    {
+        for (int i = 0; i < transformToRotate.Length; i++)
+        {
+            Quaternion root = transformToRotate[i].localRotation;
+            root.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
+            transformToRotate[i].localRotation = root;
         }
     }
 
