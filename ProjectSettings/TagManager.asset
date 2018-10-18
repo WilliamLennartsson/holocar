@@ -11,6 +11,8 @@ TagManager:
   - SpinningTag
   - InfoComponent
   - ToolTip
+  - InfoText
+  - BoundingBox
   layers:
   - Default
   - TransparentFX

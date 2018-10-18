@@ -7,6 +7,7 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
 
     private GazeRotater[] gazeRotaters;
     private SpawnToolTip[] toolTipScripts;
+    private InfoTextHandler[] infoTextHandlers;
     public Animator anim;
     private GameObject animatedCar;
     private GameObject notAnimatedCar;
@@ -31,7 +32,6 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
 
     public void resetAnimation()
     {
-        spinning = false;
         if (carAnimationRan || detailAnimationRan)
         {
             if (carAnimationRan)
@@ -44,32 +44,38 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
                 detailAnimationRan = false;
                 anim.Play("ResetDetailAnimation2");
             }
-
-            toolTip.SetActive(false);
-
-            for (int i = 0; i < gazeRotaters.Length; i++)
-            {
-                gazeRotaters[i].enabled = false;
-                toolTipScripts[i].enabled = false;
-            }
         }
     }
+
 
     public void swapCars()
     {
         spinning = false;
+        for (int i = 0; i < gazeRotaters.Length; i++)
+        {
+            gazeRotaters[i].enabled = false;
+        }
+
+
+        for (int i = 0; i < infoTextHandlers.Length; i++)
+        {
+            infoTextHandlers[i].enabled = false;
+        }
     }
 
     public void setSpinningTrue()
     {
 
-        toolTip.SetActive(true);
+        for (int i = 0; i < infoTextHandlers.Length; i++)
+        {
+            infoTextHandlers[i].enabled = true;
+        }
 
         for (int i = 0; i < gazeRotaters.Length; i++)
         {
             gazeRotaters[i].enabled = true;
-            toolTipScripts[i].enabled = true;
         }
+
         spinning = true;
     }
 
@@ -98,12 +104,12 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
 
         gazeRotaters = GetComponentsInChildren<GazeRotater>();
         toolTipScripts = GetComponentsInChildren<SpawnToolTip>();
+        infoTextHandlers = GetComponentsInChildren<InfoTextHandler>();
 
-        toolTip = GameObject.FindGameObjectWithTag("ToolTip");
-        toolTip.SetActive(false);
-
+        //toolTip = GameObject.FindGameObjectWithTag("ToolTip");
+        //toolTip.SetActive(false);
+        triggerAnimation();
         //anim.Play("DetailAnimation");
-        
     }
     void update()
     {

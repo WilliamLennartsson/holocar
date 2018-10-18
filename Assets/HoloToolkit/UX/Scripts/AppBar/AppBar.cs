@@ -296,7 +296,7 @@ namespace HoloToolkit.Unity.UX
             }
 
             GameObject newButton = Instantiate(SquareButtonPrefab, buttonParent);
-            newButton.name = template.Name;
+            newButton.name = "template.name";
             newButton.transform.localPosition = Vector3.zero;
             newButton.transform.localRotation = Quaternion.identity;
             AppBarButton mtb = newButton.AddComponent<AppBarButton>();

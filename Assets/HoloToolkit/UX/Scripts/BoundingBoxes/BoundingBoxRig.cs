@@ -5,8 +5,7 @@ using HoloToolkit.Unity.UX;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace HoloToolkit.Unity.UX
-{
+
     /// <summary>
     /// Constructs the scale and rotate gizmo handles for the Bounding Box 
     /// </summary>
@@ -526,4 +525,3 @@ namespace HoloToolkit.Unity.UX
             return BoundingBox.FlattenModeEnum.DoNotFlatten;
         }
     }
-}

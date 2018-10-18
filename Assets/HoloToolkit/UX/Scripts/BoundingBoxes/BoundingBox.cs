@@ -6,8 +6,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace HoloToolkit.Unity.UX
-{
+
     /// <summary>
     /// Base class for bounding box objects
     /// </summary>
@@ -605,4 +604,3 @@ namespace HoloToolkit.Unity.UX
         private static Vector3[] rectTransformCorners = new Vector3[4];
         #endregion
     }
-}

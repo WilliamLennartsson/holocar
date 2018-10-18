@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-10-01T07:39:13.303</Modified>
+      <Modified>2018-10-03T10:32:11.779</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\bin\x86\Release\holo-car-v3.exe">
       <PackagePath>entrypoint\holo-car-v3.exe</PackagePath>
-      <Modified>2018-10-01T07:38:50.934</Modified>
+      <Modified>2018-10-03T10:31:45.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2018-10-01T07:37:34.501</Modified>
+      <Modified>2018-10-03T10:21:52.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -551,15 +551,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2018-10-01T07:36:29.044</Modified>
+      <Modified>2018-10-03T10:20:39.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2018-10-01T07:36:23.065</Modified>
+      <Modified>2018-10-03T10:20:26.624</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2018-10-01T07:36:20.876</Modified>
+      <Modified>2018-10-03T10:20:24.136</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -567,47 +567,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2018-10-01T07:36:29.039</Modified>
+      <Modified>2018-10-03T10:20:39.277</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2018-10-01T07:36:23.202</Modified>
+      <Modified>2018-10-03T10:20:26.769</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
-      <Modified>2018-10-01T07:36:25.309</Modified>
+      <Modified>2018-10-03T10:20:32.642</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2018-10-01T07:36:28.097</Modified>
+      <Modified>2018-10-03T10:20:37.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2018-10-01T07:36:20.873</Modified>
+      <Modified>2018-10-03T10:20:24.134</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>
-      <Modified>2018-10-01T07:36:25.306</Modified>
+      <Modified>2018-10-03T10:20:32.639</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2018-10-01T07:36:28.090</Modified>
+      <Modified>2018-10-03T10:20:37.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2018-10-01T07:37:34.408</Modified>
+      <Modified>2018-10-03T10:21:52.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2018-10-01T07:37:34.409</Modified>
+      <Modified>2018-10-03T10:21:52.629</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\resources.resource">
       <PackagePath>Data\resources.resource</PackagePath>
-      <Modified>2018-10-01T07:36:25.318</Modified>
+      <Modified>2018-10-03T10:20:32.650</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Data\sharedassets0.resource">
       <PackagePath>Data\sharedassets0.resource</PackagePath>
-      <Modified>2018-10-01T07:36:28.106</Modified>
+      <Modified>2018-10-03T10:20:37.251</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -616,235 +616,235 @@
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-10-01T07:38:51.970</Modified>
+      <Modified>2018-10-03T10:31:47.261</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.812</Modified>
+      <Modified>2018-10-03T10:32:03.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.819</Modified>
+      <Modified>2018-10-03T10:32:03.242</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.830</Modified>
+      <Modified>2018-10-03T10:32:03.252</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.838</Modified>
+      <Modified>2018-10-03T10:32:03.261</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.877</Modified>
+      <Modified>2018-10-03T10:32:03.303</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.885</Modified>
+      <Modified>2018-10-03T10:32:03.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.891</Modified>
+      <Modified>2018-10-03T10:32:03.322</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.900</Modified>
+      <Modified>2018-10-03T10:32:03.329</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.909</Modified>
+      <Modified>2018-10-03T10:32:03.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.915</Modified>
+      <Modified>2018-10-03T10:32:03.347</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.924</Modified>
+      <Modified>2018-10-03T10:32:03.358</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.932</Modified>
+      <Modified>2018-10-03T10:32:03.366</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.940</Modified>
+      <Modified>2018-10-03T10:32:03.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.967</Modified>
+      <Modified>2018-10-03T10:32:03.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.974</Modified>
+      <Modified>2018-10-03T10:32:03.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.987</Modified>
+      <Modified>2018-10-03T10:32:03.426</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.995</Modified>
+      <Modified>2018-10-03T10:32:03.434</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.013</Modified>
+      <Modified>2018-10-03T10:32:03.453</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.024</Modified>
+      <Modified>2018-10-03T10:32:03.466</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.032</Modified>
+      <Modified>2018-10-03T10:32:03.474</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.039</Modified>
+      <Modified>2018-10-03T10:32:03.481</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.075</Modified>
+      <Modified>2018-10-03T10:32:03.523</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.082</Modified>
+      <Modified>2018-10-03T10:32:03.530</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.099</Modified>
+      <Modified>2018-10-03T10:32:03.554</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.AssetBundleModule.dll">
       <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.106</Modified>
+      <Modified>2018-10-03T10:32:03.561</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.116</Modified>
+      <Modified>2018-10-03T10:32:03.574</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.135</Modified>
+      <Modified>2018-10-03T10:32:03.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.153</Modified>
+      <Modified>2018-10-03T10:32:03.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.160</Modified>
+      <Modified>2018-10-03T10:32:03.627</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.599</Modified>
+      <Modified>2018-10-03T10:32:04.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.606</Modified>
+      <Modified>2018-10-03T10:32:04.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.617</Modified>
+      <Modified>2018-10-03T10:32:04.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.624</Modified>
+      <Modified>2018-10-03T10:32:04.109</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.631</Modified>
+      <Modified>2018-10-03T10:32:04.116</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.637</Modified>
+      <Modified>2018-10-03T10:32:04.123</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.645</Modified>
+      <Modified>2018-10-03T10:32:04.131</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.660</Modified>
+      <Modified>2018-10-03T10:32:04.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.666</Modified>
+      <Modified>2018-10-03T10:32:04.155</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.682</Modified>
+      <Modified>2018-10-03T10:32:04.176</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.690</Modified>
+      <Modified>2018-10-03T10:32:04.185</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2018-10-01T07:37:01.950</Modified>
+      <Modified>2018-10-03T10:21:16.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.697</Modified>
+      <Modified>2018-10-03T10:32:04.192</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.704</Modified>
+      <Modified>2018-10-03T10:32:04.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.731</Modified>
+      <Modified>2018-10-03T10:32:04.222</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.737</Modified>
+      <Modified>2018-10-03T10:32:04.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.792</Modified>
+      <Modified>2018-10-03T10:32:04.292</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.834</Modified>
+      <Modified>2018-10-03T10:32:04.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.873</Modified>
+      <Modified>2018-10-03T10:32:04.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.970</Modified>
+      <Modified>2018-10-03T10:32:04.483</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.978</Modified>
+      <Modified>2018-10-03T10:32:04.492</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2018-10-01T07:39:06.993</Modified>
+      <Modified>2018-10-03T10:32:04.506</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2018-10-01T07:39:07.008</Modified>
+      <Modified>2018-10-03T10:32:04.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.StandardEvents.dll">
       <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
-      <Modified>2018-10-01T07:39:07.022</Modified>
+      <Modified>2018-10-03T10:32:04.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2018-10-01T07:39:07.088</Modified>
+      <Modified>2018-10-03T10:32:04.615</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\GLTFSerializationUWP.dll">
       <PackagePath>GLTFSerializationUWP.dll</PackagePath>
-      <Modified>2018-10-01T07:39:07.114</Modified>
+      <Modified>2018-10-03T10:32:04.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2018-10-01T07:39:05.804</Modified>
+      <Modified>2018-10-03T10:32:03.220</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\willi\Documents\developer\hololens\holo-car-v3\App\holo-car-v3\bin\x86\Release\Core\holo-car-v3.exe">
       <PackagePath>holo-car-v3.exe</PackagePath>
-      <Modified>2018-10-01T07:39:13.297</Modified>
+      <Modified>2018-10-03T10:32:11.774</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
