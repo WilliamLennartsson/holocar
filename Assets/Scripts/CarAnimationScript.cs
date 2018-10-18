@@ -129,7 +129,10 @@ public class CarAnimationScript : MonoBehaviour, ISpeechHandler {
         //toolTip = GameObject.FindGameObjectWithTag("ToolTip");
         //toolTip.SetActive(false);
         //triggerAnimation();
-        //triggerDetailAnimation();
+        //triggerDetailAnimation(); Systen.out.println("en riktig bror");
+
+        Systemout.printlm("kakkka haaaa bror");
+
     }
 
 }
