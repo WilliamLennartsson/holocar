@@ -24,8 +24,11 @@ namespace HoloToolkit.Unity.InputModule.Utilities.Interactions
         [SerializeField]
         [Tooltip("Transform that will be dragged. Defaults to the object of the component.")]
         private Transform HostTransform = null;
-
         [SerializeField]
+        private GameObject gameObj;
+        [SerializeField]
+        Transform[] partsToTransform;
+       [SerializeField]
         [Tooltip("To visualize the object bounding box, drop the HoloToolKit/UX/Prefabs/BoundingBoxes/BoundingBoxBasic.prefab here. This is optional.")]
         private BoundingBox boundingBoxPrefab = null;
 
@@ -149,6 +152,7 @@ namespace HoloToolkit.Unity.InputModule.Utilities.Interactions
 
         private void Start()
         {
+            partsToTransform = gameObj.GetComponentsInChildren<Transform>();
             if (HostTransform == null)
             {
                 HostTransform = transform;
@@ -312,6 +316,7 @@ namespace HoloToolkit.Unity.InputModule.Utilities.Interactions
                     case State.RotatingScaling:
                     case State.MovingRotatingScaling:
                     case State.Scaling:
+             
                     case State.Rotating:
                     case State.MovingScaling:
                         OnTwoHandManipulationStarted(newState);
@@ -369,19 +374,35 @@ namespace HoloToolkit.Unity.InputModule.Utilities.Interactions
             if ((currentState & State.Scaling) > 0)
             {
                 targetScale = m_scaleLogic.UpdateMap(m_handsPressedLocationsMap);
+            
+            }
+            for (int i = 0; i < partsToTransform.Length; i++)
+            {
+                partsToTransform[i].localScale = targetScale;
+                partsToTransform[i].position = targetPosition;
+                partsToTransform[i].rotation = targetRotation;
             }
 
             HostTransform.position = targetPosition;
             HostTransform.rotation = targetRotation;
             HostTransform.localScale = targetScale;
+
 #endif // UNITY_2017_2_OR_NEWER
         }
 
         private void OnOneHandMoveUpdated()
         {
+            //FIXA DETTA!
+          
             var targetPosition = m_moveLogic.Update(m_handsPressedLocationsMap.Values.First(), HostTransform.position);
 
             HostTransform.position = targetPosition;
+
+            for(int i = 0; i < partsToTransform.Length; i++)
+            {
+                targetPosition = m_moveLogic.Update(m_handsPressedLocationsMap.Values.First(), HostTransform.position);
+                partsToTransform[i].position = HostTransform.position;
+            }
         }
 
         private void OnTwoHandManipulationEnded()
@@ -410,7 +431,12 @@ namespace HoloToolkit.Unity.InputModule.Utilities.Interactions
             }
             if ((newState & State.Scaling) > 0)
             {
+                //FIXA DETTA!
                 m_scaleLogic.Setup(m_handsPressedLocationsMap, HostTransform);
+                for(int i = 0; i < partsToTransform.Length; i++)
+                {
+                    partsToTransform[i].localScale = HostTransform.localScale;
+                }
             }
 #endif // UNITY_2017_2_OR_NEWER
         }

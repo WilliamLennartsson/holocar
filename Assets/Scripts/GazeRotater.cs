@@ -38,6 +38,7 @@ public class GazeRotater : GazeBehaviorBase
             resetRotation();
         }
     }
+
     public void resetRotation()
     {
         for (int i = 0; i < transformToRotate.Length; i++)

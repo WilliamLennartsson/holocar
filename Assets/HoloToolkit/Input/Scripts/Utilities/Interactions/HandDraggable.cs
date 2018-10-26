@@ -29,6 +29,8 @@ namespace HoloToolkit.Unity.InputModule
         [Tooltip("Scale by which hand movement in z is multiplied to move the dragged object.")]
         public float DistanceScale = 2f;
 
+        public GameObject part;
+        public Transform[] transformParts;
         public enum RotationModeEnum
         {
             Default,
@@ -74,6 +76,7 @@ namespace HoloToolkit.Unity.InputModule
             }
 
             hostRigidbody = HostTransform.GetComponent<Rigidbody>();
+            transformParts = part.GetComponentsInChildren<Transform>();
         }
 
         private void OnDestroy()
@@ -152,6 +155,8 @@ namespace HoloToolkit.Unity.InputModule
             Vector3 objUp = HostTransform.up;
             // Store where the object was grabbed from
             objRefGrabPoint = cameraTransform.transform.InverseTransformDirection(HostTransform.position - initialDraggingPosition);
+
+
 
             Vector3 objDirection = Vector3.Normalize(initialDraggingPosition - pivotPosition);
             Vector3 handDirection = Vector3.Normalize(inputPosition - pivotPosition);
@@ -254,15 +259,19 @@ namespace HoloToolkit.Unity.InputModule
                 draggingRotation = Quaternion.LookRotation(objForward, objUp);
             }
 
-            Vector3 newPosition = Vector3.Lerp(HostTransform.position, draggingPosition + cameraTransform.TransformDirection(objRefGrabPoint), PositionLerpSpeed);
-            // Apply Final Position
-            if (hostRigidbody == null)
+            for (int i = 0; i < transformParts.Length; i++)
             {
-                HostTransform.position = newPosition;
-            }
-            else
-            {
-                hostRigidbody.MovePosition(newPosition);
+                Vector3 newPosition = Vector3.Lerp(transformParts[i].position, draggingPosition + cameraTransform.TransformDirection(objRefGrabPoint), PositionLerpSpeed);
+                // Apply Final Position
+                if (hostRigidbody == null)
+                {
+                    transformParts[i].position = newPosition;
+
+                }
+                else
+                {
+                    hostRigidbody.MovePosition(newPosition);
+                }
             }
 
             // Apply Final Rotation
@@ -270,6 +279,10 @@ namespace HoloToolkit.Unity.InputModule
             if (hostRigidbody == null)
             {
                 HostTransform.rotation = newRotation;
+                for (int i = 0; i < transformParts.Length; i++)
+                {
+                    transformParts[i].rotation = HostTransform.rotation;
+                }
             }
             else
             {
@@ -310,6 +323,7 @@ namespace HoloToolkit.Unity.InputModule
         {
             if (!IsDraggingEnabled)
             {
+                IsDraggingEnabled = true;
                 return;
             }
 
@@ -325,6 +339,7 @@ namespace HoloToolkit.Unity.InputModule
         {
             if (!IsDraggingEnabled)
             {
+                StopDragging();
                 return;
             }
 
@@ -333,6 +348,7 @@ namespace HoloToolkit.Unity.InputModule
                 return;
             }
 
+            IsDraggingEnabled = false;
             isGazed = false;
         }
 
